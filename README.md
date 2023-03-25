@@ -3,19 +3,19 @@
 </h1>
 
 <p align="center">
-	<b><i>Meu desafio tecnico para a vaga de Estágio em Software Development na Axur</i></b><br>
+	<b><i>Meu primeiro desafio tecnico em Java para a vaga de Estágio em Software Development na Axur</i></b><br>
 </p>
 
 ## Desafio 🪡
 Desenvolver um programa em Java que seja capaz de obter o trecho de texto contido no nivel mais profundo da estrutura HTML  de uma [URL fornecida](http://hiring.axreng.com/internship/example1.html). <br>
 - A solução deve seguir algumas regras e boas praticas de programação como; O uso exclusivo do JDK 17 e a proibição de bibliotecas externas, packages e classes nativos do JDK relacionados a manipulação HTML, XML ou DOM, boas práticas de programação e design de softweare orientados a objetos.
 
-## Estrutura dos arquivos/
-* ```.gitignore```  Intentionally untracked files should be ignored by git.
+## Estrutura do desafio/
+* ```HtmlAnalyzer.java```  Codigo fonte do desafio; manipulação de URLs, manipulações de entrada/saida, tratamento de exceções, estruturas condicionais, uso do metodo main etc...
 
 ## Instruções
 ### Pre-requisitos
-Você precisará ter instalado em sua maquina o [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html), um editor de texto com terminal integrado, acesso a internet para executar o programa e testar as URLs e uma URL valida para ser testada. <br>
+Você precisará ter instalado em sua maquina o [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html), um editor de texto (caso queira alterar algo) com terminal integrado, acesso a internet para executar o programa e testar as URLs e uma URL valida para ser testada. <br>
 ❗️| Certifique-se de ter todas as ferramentas necessárias instaladas em sua máquina local antes de seguir com as proximas etapas<br>
 
 ### Instruções para rodar o programa :
@@ -44,19 +44,30 @@ Para executar o programa;
  #  Substituindo a URL a ser analisada pela sua própria URL:
  $ java HtmlAnalyzer http://hiring.axreng.com/internship/example1.html
   ```
-<!-- **2. Retorno esperado** ->
 
-## Comentarios
-
-<!-- Explicação de como o programa funciona; <br>
- // Exemplos de entrada e saída; -->
+Tipos de mensagens de retornos esperadas;
+ ```bash
+ #  Caso o html inserido seja valido:
+$ This is the body.
  
+  #  Caso a URL seja invalida ou não disponivel para conexão:
+ $ URL connection error
+ 
+  #  Caso o HTML esteja mal formatado:
+ $ malformated HTML
+ 
+#  Caso você insira mais de um argumento na linha de comando ou o site não tenha texto 
+# 		a ser lido, nenhuma mensagem de texto será retornada.
+  ```
 
 ## Referencias
 - [Markdown](https://www.markdownguide.org/basic-syntax/) | Documentação de como utilizar o Markdown.
+- [Documentação W3Schools](https://www.w3schools.com/) | Documentação e tutoriais praticos em Java.
+- [Bootcamp - Learn Java in 12hours](https://youtu.be/xk4_1vDrzzo) | Aprendizagem rapida da sintaxe de Java e os seus conceitos.
+- +Forums e Blogs da internet para sanar as minhas duvidas relacionadas a linguagem (Alura, Stack Overflow e Geeks for geeks).
 
-<!-- 
-## 📜  License
-This project is licensed under the terms of the [LICENSE](https://github.com/mewmewdevart/pipex/blob/main/LICENSE) file + [Axur]. See the file for more details. <br> -->
+
+## 📜  Licença
+Este projeto está licenciado sobre os termos de [LICENSE](https://github.com/mewmewdevart/pipex/blob/main/LICENSE). Acesse o link para mais informações.<br> 
 
 <p align="center"> Desenvolvido com 💜 por Larissa Cristina Benedito </p>
