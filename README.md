@@ -68,6 +68,6 @@ $ This is the body.
 
 
 ## 📜  Licença
-Este projeto está licenciado sobre os termos de [LICENSE](https://github.com/mewmewdevart/pipex/blob/main/LICENSE). Acesse o link para mais informações.<br> 
+Este projeto está licenciado sobre os termos de [LICENSE](https://github.com/mewmewdevart/InternChallenge_Axur/blob/main/LICENSE). Acesse o link para mais informações.<br> 
 
 <p align="center"> Desenvolvido com 💜 por Larissa Cristina Benedito </p>
