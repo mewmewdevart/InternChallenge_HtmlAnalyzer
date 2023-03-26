@@ -59,6 +59,10 @@ $ This is the body.
 #  Caso você insira mais de um argumento na linha de comando ou o site não tenha texto 
 # 		a ser lido, nenhuma mensagem de texto será retornada.
   ```
+  
+## Tecnologias
+- [Eclipse - IDE](https://www.eclipse.org/downloads/) | Meu ambiente de desenvolvimento integrado para escrever, ler e executar código Java com mais eficiência.
+- [Java 17.0.6 2023-01-17 LTS](https://www.oracle.com/br/java/) | Versão Java usada neste desafio tecnico.
 
 ## Referencias
 - [Markdown](https://www.markdownguide.org/basic-syntax/) | Documentação de como utilizar o Markdown.
