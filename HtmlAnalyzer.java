@@ -3,7 +3,7 @@
 • Author: Larissa Cristina Benedito ツ
 • Description: This program is a Html Analyzer for the Axur's technical challenge, capable of obtaining the text snippet
 from the deepest level of an HTML structure given a URL, even for poorly formed HTML structures.
-			Challenge Finished: 03/25/2023
+			Challenge Finished: 03/27/2023
 				Check out my other projects on Github: https://github.com/mewmewdevart
 */
 
@@ -26,46 +26,50 @@ public class HtmlAnalyzer {
 	
 				InputStream inputStream = connection.getInputStream();
 				Scanner scanner = new Scanner(inputStream);
-	
-				int depth = 0;
-				String currentTag = "";
-				boolean foundText = false;
+
+				int max_deep = 0;
+				int current_deep = 0;
+				String deep_text = "";
+				StringBuilder currentText = new StringBuilder();
 
 				// Read line by line from the web page 
 				while (scanner.hasNextLine()) {
 					String line = scanner.nextLine().trim();
 
-					// Check if exist empty line
-					if (line.isEmpty())
+					if (line.isEmpty()) {
 						continue;
-
-					// Filter the differents prefixs of HTML tag's
+					}
+					// Check the prefix of tag </>
 					if (line.startsWith("</")) {
-						currentTag = currentTag.substring(0, currentTag.length() - line.length() + 2);
-						depth--;
+						current_deep--;
+						if (current_deep == max_deep) {
+							if (deep_text.isEmpty()) {
+								deep_text = currentText.toString().trim();
+							}
+							currentText = new StringBuilder();
+						}
 					} else if (line.startsWith("<")) {
-						currentTag += line + ">";
-						depth++;
+						current_deep++;
 					} else {
-						if (!foundText && depth == 2) {
-							System.out.println(line);
-							foundText = true;
+						currentText.append(line).append(" ");
+						if (current_deep > max_deep) {
+  							max_deep = current_deep;
+							deep_text = currentText.toString().trim();
+							currentText = new StringBuilder();
 						}
 					}
-
-					if (depth == 0)
-						currentTag = "";
 				}
 				scanner.close();
-	
-				// Check the errors
-				if (!foundText)
+
+				if (deep_text.isEmpty())
 					System.exit(1);
+
+				System.out.println(deep_text);
 			} catch (MalformedURLException e) {
-				System.out.println("malformed HTML");
+				System.out.print("malformed HTML");
 				System.exit(1);
 			} catch (IOException e) {
-				System.out.println("URL connection error");
+				System.out.print("URL connection error");
 				System.exit(1);
 			}
 		} else {
