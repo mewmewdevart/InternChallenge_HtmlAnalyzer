@@ -48,7 +48,7 @@ Para executar o programa;
 Tipos de mensagens de retornos esperadas;
  ```bash
  #  Caso o html inserido seja valido:
-$ This is the body.
+$ This is the title.
  
   #  Caso a URL seja invalida ou não disponivel para conexão:
  $ URL connection error
