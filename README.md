@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-	<b><i>Meu primeiro desafio tecnico em Java para a vaga de Estágio em Software Development na Axur</i></b><br>
+	<b><i>Meu primeiro desafio tecnico em Java para a vaga de Estágio em Software Development em uma empresa de tecnologia. </i></b><br>
 </p>
 
 ## Desafio 🪡
@@ -24,7 +24,7 @@ Você precisará ter instalado em sua maquina o [JDK 17](https://www.oracle.com/
 
 ```bash
 # Clone o meu repositorio
-$ git clone git@github.com:mewmewdevart/InternChallenge_Axur.git
+$ git clone git@github.com:mewmewdevart/InternChallenge_HtmlAnalyzer.git
 
 # Entre dentro da pasta do projeto
 $ cd InternChallenge_Axur/
@@ -72,6 +72,6 @@ $ This is the title.
 
 
 ## 📜  Licença
-Este projeto está licenciado sobre os termos de [LICENSE](https://github.com/mewmewdevart/InternChallenge_Axur/blob/main/LICENSE). Acesse o link para mais informações.<br> 
+Este projeto está licenciado sobre os termos de [LICENSE](https://github.com/mewmewdevart/InternChallenge_HtmlAnalyzer/blob/main/LICENSE). Acesse o link para mais informações.<br> 
 
 <p align="center"> Desenvolvido com 💜 por Larissa Cristina Benedito </p>
