@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-	<b><i>Meu primeiro desafio tecnico em Java para a vaga de Estágio em Software Development em uma empresa de tecnologia. </i></b><br>
+	<b><i>Meu primeiro desafio tecnico em Java ☕ para a vaga de Estágio em Engenharia de Software.</i></b><br>
 </p>
 
 ## Desafio 🪡
