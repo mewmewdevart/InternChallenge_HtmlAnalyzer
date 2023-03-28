@@ -27,7 +27,7 @@ Você precisará ter instalado em sua maquina o [JDK 17](https://www.oracle.com/
 $ git clone git@github.com:mewmewdevart/InternChallenge_HtmlAnalyzer.git
 
 # Entre dentro da pasta do projeto
-$ cd InternChallenge_Axur/
+$ cd InternChallenge_HtmlAnalyzer/
 ```
 
 **1. Execute o programa**
