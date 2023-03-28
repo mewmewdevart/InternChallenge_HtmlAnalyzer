@@ -1,5 +1,5 @@
 <h1 align="center">
- InternChallenge Axur
+ InternChallenge : HtmlAnalyzer
 </h1>
 
 <p align="center">
